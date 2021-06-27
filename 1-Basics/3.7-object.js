@@ -22,3 +22,4 @@ const car = {
 car.speed = 440;
 
 console.log(car);
+//function object???
