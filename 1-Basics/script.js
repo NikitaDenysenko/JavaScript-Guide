@@ -58,3 +58,10 @@ console.table({
 //basic math order
 console.log(4 + 2 + 4 * 120);
 console.log((4 + 2 + 4) * 120);
+
+//6. Implicit tiype convertion
+
+let number1 = "20";
+let number2 = "5";
+console.log(number1 - number2);
+//18
