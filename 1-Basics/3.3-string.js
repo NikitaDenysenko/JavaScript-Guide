@@ -10,9 +10,21 @@ let testString = "Hello, It's me, Mario!";
 let stringWithSapaces = "    the spaced text    ";
 let brokenString = "   Joe Doe the kInG oF Custle  ";
 
+const printResult = (input, output) => {
+    return `${input} => ${output}`;
+};
+
+//Methods and properties
+
+/* .length */
+//returns the size of the string
+const demoLength = () => {
+    return testString.length;
+};
+
 console.log(testString[1], testString.charAt(1));
 console.table({
-    ".length": testString.length,
+    ".length": demoLength,
     ".toLowerCase()": testString.toLowerCase(),
     ".toUpperCase()": testString.toUpperCase(),
     ".charAt()": testString.charAt(1),

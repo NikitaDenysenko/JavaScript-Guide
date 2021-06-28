@@ -1,9 +1,3 @@
-//Basics of outputting data//
-
-//document.write("hellor world");
-//alert("hello from alert");
-//console.log("hello from console.log");
-
 console.log(console);
 
 //test data
