@@ -10,6 +10,12 @@ console.log(randomDataInArray);
 //Data and helper methods
 const animalsArray = ["cats", "dogs", "racoons"];
 const birds = ["amazon bird", "parot", "peageon"];
+const personData = [
+    { name: "Nick", age: 20, status: "student", id: 1, salary: 100 },
+    { name: "Den", age: 42, status: "worker", id: 2, salary: 500 },
+    { name: "Bob", age: 12, status: "student", id: 3, salary: 320 },
+    { name: "Joe", age: 54, status: "retiered", id: 4, salary: 200 },
+];
 
 const printResult = (output) => {
     const input = [...animalsArray].toString();
@@ -84,16 +90,48 @@ const demoSplice = (startingIndex, deleteCount, optionalNewElements) => {
     return printResult(output);
 };
 
-console.table({
-    "mutable methods": "--------",
-    ".reverse()": demoReverse(),
-    ".unshift()": demoUnshift("lions"),
-    ".shift()": demoShift(),
-    ".push()": demoPush("hippo"),
-    ".pop()": demoPop(),
-    ".splice()": demoSplice(0, 2),
-    "immutable methods": "--------",
-    ".concat()": demoConcat(birds),
-    ".length": demoLength(),
+// ITERABLE METHODS //
+
+/* .forEach() */
+personData.forEach((person) => {
+    //console.log(person.name.toUpperCase());
 });
+
+/* .map() */
+const newPersonData = personData.map((person) => {
+    return {
+        newStatus: person.status.toUpperCase(),
+        newAge: person.age * 2,
+    };
+});
+
+/* .filter() */
+const youngPeople = personData.filter((person) => {
+    return person.age < 21;
+});
+
+/* .find() */
+const person = personData.find((person) => {
+    return person.id === 3;
+});
+
+/* .reduce() */
+const totalSalary = personData.reduce((total, current) => {
+    console.log(total, current);
+    return total + current.salary;
+}, 0);
+console.log(totalSalary);
+
+// console.table({
+//     "mutable methods": "--------",
+//     ".reverse()": demoReverse(),
+//     ".unshift()": demoUnshift("lions"),
+//     ".shift()": demoShift(),
+//     ".push()": demoPush("hippo"),
+//     ".pop()": demoPop(),
+//     ".splice()": demoSplice(0, 2),
+//     "immutable methods": "--------",
+//     ".concat()": demoConcat(birds),
+//     ".length": demoLength(),
+// });
 // add .sort() and other methods

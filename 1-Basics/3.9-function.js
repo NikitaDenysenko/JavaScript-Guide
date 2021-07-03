@@ -34,3 +34,8 @@ function inchToCm(width, height) {
 
 const data = inchToCm(1, 2);
 console.log(data);
+
+//IIFE (Immediately Invoked Function Expression)
+(function testSelf() {
+    console.log("envoked myself");
+})();
