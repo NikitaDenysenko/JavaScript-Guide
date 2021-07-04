@@ -3,9 +3,9 @@
 //Basic Arrays
 const cars = ["Lambo", "BMW", "Volvo", "Tesla"];
 const randomDataInArray = ["str", 32, null, true, {}];
-console.log(randomDataInArray);
+//console.log(randomDataInArray);
 randomDataInArray[4] = "used to be an object";
-console.log(randomDataInArray);
+//console.log(randomDataInArray);
 
 //Data and helper methods
 const animalsArray = ["cats", "dogs", "racoons"];
@@ -91,35 +91,44 @@ const demoSplice = (startingIndex, deleteCount, optionalNewElements) => {
 };
 
 // ITERABLE METHODS //
-
-/* .forEach() */
-personData.forEach((person) => {
-    //console.log(person.name.toUpperCase());
-});
+console.log("------------------");
 
 /* .map() */
-const newPersonData = personData.map((person) => {
+//Returns new array, with ther result from callback for every element of array
+const newPersonData = personData.map((currentValue, index, array) => {
     return {
-        newStatus: person.status.toUpperCase(),
-        newAge: person.age * 2,
+        name: currentValue.name,
+        age: currentValue.age * 2,
+        index,
     };
 });
 
 /* .filter() */
-const youngPeople = personData.filter((person) => {
-    return person.age < 21;
+//Returns new array, with all elements, that passed the check in callback function
+const youngPeople = personData.filter((currentValue, index, array) => {
+    return currentValue.age < 21;
 });
 
 /* .find() */
-const person = personData.find((person) => {
-    return person.id === 3;
+//Returns first found element, that satisfies the condition
+const person = personData.find((currentValue, index, array) => {
+    return currentValue.id === 3;
 });
 
 /* .reduce() */
-const totalSalary = personData.reduce((total, current) => {
-    console.log(total, current);
-    return total + current.salary;
-}, 0);
+//Executes "reducer" function to each element in array
+let initialValue = 0;
+const totalSalary = personData.reduce((total, currentValue, index, array) => {
+    //total(a.k.a previousValue,accumulator ) - value, that was returned from the callback
+    console.log({
+        total,
+        currentValue: currentValue.salary,
+        index,
+        initialValue,
+    });
+    return total + currentValue.salary;
+}, initialValue);
+console.log(personData);
 console.log(totalSalary);
 
 // console.table({
