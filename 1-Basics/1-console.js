@@ -28,6 +28,10 @@ console.log(
     "color: yellow; font-weight: bold;background-color:black"
 );
 
+/* .dir() */
+//outputs list of properties of passed JS object
+console.dir(window);
+
 /* .group() */
 //creates new log group, moves logs, on the bottom of the console to the right
 console.group(testArray);
