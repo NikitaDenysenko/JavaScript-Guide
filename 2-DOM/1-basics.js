@@ -54,7 +54,60 @@ const preLastItemElement = lastItemElement.previousElementSibling;
 //access text content in element
 const nodeValue = heading.firstChild.nodeValue;
 const textContent = heading.textContent;
-console.log(textContent);
+//console.log(textContent);
 
 /* .getAtribute() .setAtribute() */
-//13
+const underlineElement = document.querySelector(".underline");
+const attributeClass = underlineElement.getAttribute("class");
+underlineElement.setAttribute("id", "unique");
+// .setAttribute() - overrides attribute
+
+/* .classList() .className() */
+const first = document.querySelector("#first");
+const second = document.querySelector("#second");
+const third = document.querySelector("#third");
+
+const classValue = first.className;
+
+//will override the class
+//first.className = 'red'
+
+//add more then one class
+second.className = "blue white";
+
+third.classList.add("blue", "white");
+third.classList.remove("white");
+const isClassPresent = third.classList.contains("blue"); //reutrn boolean
+
+/* .createElement('element) */
+/* .createTextNode('text content') */
+/* element.appendChild(childElement) */
+/* insertBefore('element', 'location') */
+/* replaceChild('element', 'location') */
+
+const bodyDiv = document.createElement("div");
+const text = document.createTextNode("sample text");
+bodyDiv.appendChild(text);
+document.body.appendChild(bodyDiv);
+
+const appendedLi = document.createElement("li");
+const textForLi = document.createTextNode("six");
+appendedLi.classList.add("black");
+appendedLi.appendChild(textForLi);
+
+const main = document.querySelector(".main");
+main.insertBefore(appendedLi, ul);
+
+const content = document.querySelector(".content");
+const h6 = document.querySelector(".content h6");
+
+const smallHeading = document.createElement("h6");
+const smallText = document.createTextNode("small h6 text");
+smallHeading.setAttribute("class", "green");
+smallHeading.appendChild(smallText);
+content.replaceChild(smallHeading, h6);
+
+/* .prepend .innerText */
+const biggerHeading = document.createElement("h4");
+biggerHeading.innerText = "powered by h4 tag";
+document.body.prepend(biggerHeading);
