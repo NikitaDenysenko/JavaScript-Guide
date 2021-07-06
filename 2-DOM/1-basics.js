@@ -111,3 +111,86 @@ content.replaceChild(smallHeading, h6);
 const biggerHeading = document.createElement("h4");
 biggerHeading.innerText = "powered by h4 tag";
 document.body.prepend(biggerHeading);
+
+/* EVENTS */
+
+/* .addEventListener() */
+const button = document.querySelector(".events .btn");
+const eventHeading = document.querySelector(".events h1");
+
+/* click event */
+//click - fires after full action occures
+button.addEventListener("click", () => {
+    const hasClass = eventHeading.classList.contains("red");
+    hasClass
+        ? eventHeading.classList.remove("red")
+        : eventHeading.classList.add("red");
+});
+/* mouse events */
+//mousedown - button is pressed
+//mouseup - button is released
+//mouseenter - moved onto an element
+//mouseleave - moved out of an element
+button.addEventListener("mouseenter", () => {
+    button.classList.add("green");
+    console.log("you entered the button");
+});
+button.addEventListener("mouseleave", () => {
+    button.classList.remove("green");
+    console.log("you left the button");
+});
+button.addEventListener("mousedown", () => {
+    console.log("button is pressed");
+});
+button.addEventListener("mouseup", () => {
+    console.log("button is released");
+});
+button.addEventListener("click", () => {
+    console.log("button is clicked");
+});
+
+/* key events */
+// keypress - when key is pressed
+// keydown - when key is down
+// keyup - when key is released
+const input = document.querySelector(".events input");
+
+input.addEventListener("keypress", () => {
+    console.log("you pressed a key");
+});
+input.addEventListener("keydown", () => {
+    console.log("keydown");
+});
+//to get value from input
+input.addEventListener("keyup", () => {
+    console.log("keyup");
+    console.log(input.value);
+});
+
+/* Event Object! */
+const headingH3 = document.querySelector("#heading");
+const link = document.querySelector("#link");
+
+headingH3.addEventListener("click", (event) => {
+    console.log(event.type);
+    console.log(event.currentTarget);
+    event.currentTarget.classList.add("blue");
+});
+
+link.addEventListener("click", (event) => {
+    event.preventDefault();
+});
+
+/* .currentTarget vs .target */
+//currentTarget - refers to the element to which the event handler has been attached
+//target - identifies the element on which the event occured
+const btns = document.querySelectorAll(".btn-s");
+console.log(btns);
+btns.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+        // console.log(event.currentTarget);
+        // event.currentTarget.style.color = "yellow";
+
+        event.target.style.color = "yellow";
+    });
+});
