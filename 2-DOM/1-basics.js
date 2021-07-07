@@ -212,4 +212,5 @@ function stopPropagation(event) {
 }
 
 list.addEventListener("click", stopPropagation);
+//list.addEventListener("click", stopPropagation, {capture: true}); {capture: true} ?????
 container.addEventListener("click", showBubbling);
