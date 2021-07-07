@@ -33,6 +33,7 @@ console.table({
     ".startsWith()": testString.startsWith("Hello"),
     ".includes()": testString.includes("Mario"),
     ".slice()": testString.slice(0, 14), //does not inclueds last index
+    ".endsWith()": testString.endsWith("io!"),
 });
 
 //chaining methods
