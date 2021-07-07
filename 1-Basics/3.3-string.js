@@ -21,7 +21,8 @@ const printResult = (input, output) => {
 const demoLength = () => {
     return testString.length;
 };
-
+//TODO .lastIndexOf() .localeCompare() .match() .matchAll() .repeat() .replace()
+// .search() .split() .substr() .substring()
 console.log(testString[1], testString.charAt(1));
 console.table({
     ".length": demoLength,
