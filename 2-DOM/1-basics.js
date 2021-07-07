@@ -185,7 +185,7 @@ link.addEventListener("click", (event) => {
 //currentTarget - refers to the element to which the event handler has been attached
 //target - identifies the element on which the event occured
 const btns = document.querySelectorAll(".btn-s");
-console.log(btns);
+//console.log(btns);
 btns.forEach((btn) => {
     btn.addEventListener("click", (event) => {
         // console.log(event.currentTarget);
@@ -194,3 +194,22 @@ btns.forEach((btn) => {
         event.target.style.color = "yellow";
     });
 });
+
+/* propagation, bubbling, capturing */
+//event propagation - ????
+//event bubbling - ?????
+//event capturing - ????
+const container = document.querySelector(".container");
+const list = document.querySelector(".list-items");
+
+function showBubbling(event) {
+    console.log("current targent", event.currentTarget);
+    console.log(" targent", event.target);
+}
+
+function stopPropagation(event) {
+    event.stopPropagation();
+}
+
+list.addEventListener("click", stopPropagation);
+container.addEventListener("click", showBubbling);
