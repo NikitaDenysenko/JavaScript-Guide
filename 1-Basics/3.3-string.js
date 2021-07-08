@@ -85,7 +85,20 @@ const demoRepeat = (str, count) => {
 
 //REGEX .search() .replace() .match() .matchAll()
 
-// .split() .substr() .substring()
+// .split() .substring()
+
+/* .split() */
+//creates array from string, with specific separator
+const demoSplit = (str, separator) => {
+    return printResult(str, str.split(separator));
+};
+
+/* .substring() */
+//returns a substring from string
+const demoSubstring = (str, from, to) => {
+    return printResult(str, str.substring(from, to));
+};
+
 console.table({
     ".length": demoLength(testString),
     ".toLowerCase()": demoToLowerCase(testString),
@@ -98,6 +111,8 @@ console.table({
     ".trim()": demoTrim(stringWithSapaces),
     ".includes()": demoIncludes(testString, "Mario"),
     ".slice()": demoSlice(testString, 0, 14),
+    ".substring()": demoSubstring(testString, 0, 14),
+    ".split()": demoSplit(testName, ""),
     ".repeat()": demoRepeat(testName, 3),
 });
 
