@@ -84,6 +84,44 @@ function createCar(brandName, maxSpeed) {
         },
     };
 }
+const carFactoryFunction = createCar("BMW", 350);
+carFactoryFunction.greet();
 
-const myCar = createCar("BMW", 350);
-myCar.greet();
+//constructor functions
+function Car(brandName, maxSpeed) {
+    this.brandName = brandName;
+    this.maxSpeed = maxSpeed;
+    this.greet = function () {
+        console.log(
+            `This my ${this.brandName}, it's max speed is ${this.maxSpeed}`
+        );
+    };
+}
+//new - creates new object, points on it,omit return. Without new - it will not refer to the object
+const carConstructorFunction = new Car("Lamborgini", 380);
+carConstructorFunction.greet();
+
+//All objects in JS have access to constructor property
+//that returns constructor function that craeted it
+
+//constructor property
+console.log(carConstructorFunction.constructor);
+
+//array and fucntions ARE OBJECTS!! is JS
+const obj = {};
+const arr = [];
+const func = function () {};
+console.log({
+    obj: obj.constructor,
+    arr: arr.constructor,
+    func: func.constructor,
+});
+
+/* Prototypal Inheritance Model */
+/* 
+    JS uses prototypal inheritance model. That means that 
+    every constructor function/class has a prototype property
+    that is shared by every instance of the constructor/class.
+    So any properties and methods or prototype can be accessed 
+    by every instance. Prototype property returns a objects
+*/
