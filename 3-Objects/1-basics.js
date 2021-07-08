@@ -125,3 +125,92 @@ console.log({
     So any properties and methods or prototype can be accessed 
     by every instance. Prototype property returns a objects
 */
+//prototype vs __proto__ ????
+
+function Account(name, initialBalance) {
+    this.name = name;
+    this.balance = initialBalance;
+    this.deposit = function (amount) {
+        this.balance += amount;
+        console.log(`Hello, ${this.name}, your balance: ${this.balance}`);
+    };
+}
+
+Account.prototype.bank = "VIVALDI";
+
+const john = new Account("john", 200);
+const bob = new Account("bob", 0);
+
+//console.log({ john, bob });
+
+/* ES6 classes */
+class AccountClass {
+    constructor(name, initialBalance) {
+        this.name = name;
+        this.initialBalance = initialBalance;
+    }
+    bank = "Vivaldi"; //this property will be present in all instances of this class
+    deposit(amount) {
+        this.initialBalance += amount;
+    }
+}
+
+const joe = new AccountClass("Joe", 300);
+const doe = new AccountClass();
+console.log(joe.deposit(500));
+console.log(joe);
+
+/* .call() */
+
+const mike = {
+    name: "Mike",
+    age: 32,
+    introduceMyself(item) {
+        console.log(
+            `Hello,my name is ${this.name}, I'm ${this.age} and I have a ${item}`
+        );
+    },
+};
+const valera = {
+    name: "Valera",
+    age: 54,
+};
+
+function greet(item) {
+    console.log(
+        `Hello,my name is ${this.name}, I'm ${this.age} and I have a ${item}`
+    );
+}
+
+greet.call(mike, "apple");
+mike.introduceMyself.call(valera, "pineapple");
+
+/* .apply() */
+
+greet.apply(mike, ["apple"]);
+mike.introduceMyself.apply(valera, ["pineapple"]);
+/* .bind() */
+const bindedFunction = greet.bind(valera, "tomato");
+bindedFunction();
+
+//example with buttons
+const counter = {
+    count: 0,
+    increment() {
+        console.log(this);
+        this.count++;
+        console.log(this.count);
+    },
+};
+const btn = document.querySelector(".increment");
+
+//(bad) will point "this" to the button
+//btn.addEventListener("click", counter.increment);
+
+//(some edge cases with .removeEventListener() ) will point "this" to the object
+//btn.addEventListener("click", counter.increment.bind(counter));
+
+//good
+const increment = counter.increment.bind(counter);
+btn.addEventListener("click", increment);
+btn.removeEventListener("click", increment);
