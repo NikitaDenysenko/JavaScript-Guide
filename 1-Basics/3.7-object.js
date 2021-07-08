@@ -20,6 +20,7 @@ const car = {
 };
 
 car.speed = 440;
-
+//delete property (returns boolean)
+delete car.isFast;
 console.log(car);
 //function object???

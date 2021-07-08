@@ -118,6 +118,9 @@ document.body.prepend(biggerHeading);
 const button = document.querySelector(".events .btn");
 const eventHeading = document.querySelector(".events h1");
 
+//TODO
+/* .removeEventListener() ??????? */
+
 /* click event */
 //click - fires after full action occures
 button.addEventListener("click", () => {
