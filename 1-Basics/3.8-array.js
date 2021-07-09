@@ -124,16 +124,16 @@ const totalSalary = personData.reduce((total, currentValue, index, array) => {
 console.log(personData);
 console.log(totalSalary);
 
-// console.table({
-//     "mutable methods": "--------",
-//     ".reverse()": demoReverse(),
-//     ".unshift()": demoUnshift("lions"),
-//     ".shift()": demoShift(),
-//     ".push()": demoPush("hippo"),
-//     ".pop()": demoPop(),
-//     ".splice()": demoSplice(0, 2),
-//     "immutable methods": "--------",
-//     ".concat()": demoConcat(birds),
-//     ".length": demoLength(),
-// });
-// add .sort() and other methods
+console.table({
+    "mutable methods": "--------",
+    ".reverse()": demoReverse(),
+    ".unshift()": demoUnshift("lions"),
+    ".shift()": demoShift(),
+    ".push()": demoPush("hippo"),
+    ".pop()": demoPop(),
+    ".splice()": demoSplice(0, 2),
+    "immutable methods": "--------",
+    ".concat()": demoConcat(birds),
+    ".length": demoLength(),
+});
+//add .sort() and other methods

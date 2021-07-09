@@ -44,3 +44,55 @@ const firstNonConsecutive = (arr) => {
     return null;
 };
 */
+
+//https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/javascript
+//Abbreviate a Two Word Name
+/*
+const name = "greg smith";
+const abbrevName = (name) => {
+    return name
+        .split(" ")
+        .map((value) => value.charAt(0).toUpperCase())
+        .join(".");
+};
+console.log(abbrevName(name));
+*/
+
+//https://www.codewars.com/kata/572b77262bedd351e9000076/train/javascript
+//pick a set of first elements
+/* 
+My solution:
+const first = (arr, count = 1) => {
+    return arr.length === 0 ? [] : arr.slice(0, count);
+};
+
+A better solution:
+const first = (arr, count = 1) => {
+    return arr.slice(0, count);
+};
+*/
+
+//https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7/train/javascript
+//Filter out the geese
+/*
+const birds = [
+    "Mallard",
+    "Hook Bill",
+    "African",
+    "Crested",
+    "Pilgrim",
+    "Toulouse",
+    "Blue Swedish",
+];
+function gooseFilter(birds) {
+    const geese = [
+        "African",
+        "Roman Tufted",
+        "Toulouse",
+        "Pilgrim",
+        "Steinbacher",
+    ];
+    return birds.filter(bird => !geese.includes(bird))
+}
+console.log(gooseFilter(birds));
+*/
