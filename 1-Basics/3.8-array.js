@@ -110,6 +110,13 @@ const person = personData.find((currentValue, index, array) => {
 
 /* .reduce() */
 //Executes "reducer" function to each element in array
+
+/*
+    If you don't provide the second parameter (initialValue) to .reduce(), 
+    it uses the first element of the array as the accumulator 
+    and STARTS at the SECOND element.
+*/
+
 let initialValue = 0;
 const totalSalary = personData.reduce((total, currentValue, index, array) => {
     //total(a.k.a previousValue,accumulator ) - value, that was returned from the callback

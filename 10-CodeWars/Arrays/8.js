@@ -96,3 +96,22 @@ function gooseFilter(birds) {
 }
 console.log(gooseFilter(birds));
 */
+
+//https://www.codewars.com/kata/54edbc7200b811e956000556/train/javascript
+//Counting sheep...
+/*
+My Solution
+function countSheeps(sheeps) {
+    return sheeps.reduce((total, currentValue) => {
+        if(currentValue) {
+            total = total + 1
+        }
+        return total
+    },0)
+}
+
+Better Solution
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
+*/
