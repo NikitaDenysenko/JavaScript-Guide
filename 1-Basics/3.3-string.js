@@ -83,9 +83,6 @@ const demoRepeat = (str, count) => {
     return printResult(str, str.repeat(count));
 };
 
-//REGEX .search() .replace() .match() .matchAll()
-
-// .split() .substring()
 
 /* .split() */
 //creates array from string, with specific separator
@@ -98,6 +95,8 @@ const demoSplit = (str, separator) => {
 const demoSubstring = (str, from, to) => {
     return printResult(str, str.substring(from, to));
 };
+
+//substring vs slice ????
 
 console.table({
     ".length": demoLength(testString),
@@ -118,3 +117,5 @@ console.table({
 
 //chaining methods
 console.log(brokenString.trim().toLowerCase().startsWith("joe"));
+
+//REGEX .search() .replace() .match() .matchAll()
