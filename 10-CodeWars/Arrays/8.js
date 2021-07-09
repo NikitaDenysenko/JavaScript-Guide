@@ -110,8 +110,29 @@ function countSheeps(sheeps) {
     },0)
 }
 
-Better Solution
+A better solution
 function countSheeps(arrayOfSheeps) {
   return arrayOfSheeps.filter(Boolean).length;
+}
+*/
+
+//https://www.codewars.com/kata/57096af70dad013aa200007b/train/javascript
+//Logical calculator
+/* 
+Solution was found on the internet
+function logicalCalc(array, op){
+  if(op == 'AND') return array.reduce((item,current) => item && current);
+  if(op == 'OR') return array.reduce((item,current) => item || current);
+  if(op == 'XOR') return array.reduce((item,current) => item != current);
+}
+
+Alternative solution
+const ops = {
+  'AND': (a, b) => a && b,
+  'OR': (a, b) =>  a || b,
+  'XOR': (a, b) => a !== b
+}
+function logicalCalc(array, op){
+  return array.reduce(ops[op]);
 }
 */
