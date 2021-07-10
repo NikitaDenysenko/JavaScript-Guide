@@ -87,7 +87,12 @@ const demoSplice = (startingIndex, deleteCount, optionalNewElements) => {
 //.join() .indexOf() .lastIndexOf() .toString()
 
 /* .sort() */
-//sorts an array, returns sorted (mutated) array 
+//sorts an array, returns sorted (mutated) array, it uses tree-way comparison algorithm
+//if compareFunction was not provided - the elements are sorted by converting them to strings and comparing the strings in the order of Unicode code points 
+//if compareFunction was provided - it will do the following
+/*
+    if return value < 0
+*/
 const demoSort = () => {
     const copyOfOriginal = [...animalsArray];
 }
