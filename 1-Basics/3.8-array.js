@@ -82,6 +82,16 @@ const demoSplice = (startingIndex, deleteCount, optionalNewElements) => {
     const output = `array = ${copyOfOriginal}, returned deleted elements = ${deletedItems}`;
     return printResult(output);
 };
+//TODO
+// .sort() .slice() .copyWithin() .fill() .includes() 
+//.join() .indexOf() .lastIndexOf() .toString()
+
+/* .sort() */
+//sorts an array, returns sorted (mutated) array 
+const demoSort = () => {
+    const copyOfOriginal = [...animalsArray];
+}
+
 
 // ITERABLE METHODS //
 console.log("------------------");
@@ -131,6 +141,9 @@ const totalSalary = personData.reduce((total, currentValue, index, array) => {
 console.log(personData);
 console.log(totalSalary);
 
+//TODO
+// .every() .some() .findIndex() .keys() .values()
+
 console.table({
     "mutable methods": "--------",
     ".reverse()": demoReverse(),
@@ -143,4 +156,3 @@ console.table({
     ".concat()": demoConcat(birds),
     ".length": demoLength(),
 });
-//add .sort() and other methods

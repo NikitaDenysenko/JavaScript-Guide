@@ -71,6 +71,7 @@ btn2.addEventListener("click", function () {
 /* Blue Print */
 /* Factory Functions */
 /* Constructor Functions */
+//function object???
 
 //factory function
 function createCar(brandName, maxSpeed) {

@@ -8,8 +8,3 @@
  * case sensative (fullMoon vs fullmoon)
  * camelCase or snake_case
  */
-
-// let vs const vs var
-
-//var - function scope
-//let, const - block scope

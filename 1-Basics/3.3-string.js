@@ -65,12 +65,6 @@ const demoIncludes = (str, substr) => {
     return printResult(substr, str.includes(str));
 };
 
-/* .slice() */
-//extracts a portion of a string and returns a new string.
-const demoSlice = (str, beginIndex, endIndex) => {
-    return printResult(str, str.slice(beginIndex, endIndex));
-};
-
 /* .lastIndexOf() */
 //return index, where searchValue is last present in string
 const demoLastIndexOf = (str, searchValue) => {
@@ -90,13 +84,36 @@ const demoSplit = (str, separator) => {
     return printResult(str, str.split(separator));
 };
 
+/* .slice() */
+//extracts a portion of a string and returns a new string.
+const demoSlice = (str, beginIndex, endIndex) => {
+    return printResult(str, str.slice(beginIndex, endIndex));
+};
+
 /* .substring() */
 //returns a substring from string
 const demoSubstring = (str, from, to) => {
     return printResult(str, str.substring(from, to));
 };
 
-//substring vs slice ????
+/*
+    substring() vs slice()
+
+    substring():
+        * startIndex > endIndex => indexes are swapped
+        "Hello".substring(2,10) === "Hello".substring(10,2) === "llo"
+
+        * startIndex/endIndex === NaN || < 0 => index is treated as 0
+        "Hello".substring(NaN) === "Hello".substring(-2) === "Hello"
+
+    slice():
+        * startIndex > endIndex => returns empty string
+        "Hello".substring(10,2) === ""
+    
+        * startIndex/endIndex === NaN => index is treated as 0
+          startIndex < 0 => stratIndex = stringLength + stratIndex
+          endIndex < 0 => endIndex = stringLength + endIndex
+*/
 
 console.table({
     ".length": demoLength(testString),
