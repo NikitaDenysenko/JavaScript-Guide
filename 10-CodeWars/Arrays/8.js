@@ -166,7 +166,7 @@ A better solution
 function fakeBin(x) {
     return x.split('').map(n => n < 5 ? 0 : 1).join('');
 }
- */
+*/
 
 //https://www.codewars.com/kata/56ff6a70e1a63ccdfa0001b1/train/javascript
 //SpeedCode #2 - Array Madness
@@ -177,6 +177,102 @@ const arrayMadness = (first, second) => {
 const countSumOfPow = (array, pow) => {
     return array.reduce((total,value) => {
         return total + Math.pow(value, pow)
+    },0)
+}
+*/
+
+//https://www.codewars.com/kata/5769b3802ae6f8e4890009d2/train/javascript
+//Removing Elements
+/* 
+const removeEveryOther = (arr) => arr.filter((_, index) => index % 2 === 0);
+*/
+
+//https://www.codewars.com/kata/5709bdd2f088096786000008/train/javascript
+//noobCode 01: SUPERSIZE ME.... or rather, this integer!
+/* 
+function superSize(num) {
+    return parseInt(
+        num
+            .toString()
+            .split("")
+            .sort((a, b) => b - a)
+            .join("")
+    );
+}
+*/
+
+//https://www.codewars.com/kata/559d2284b5bb6799e9000047/train/javascript
+//Add Length
+/*
+function addLength(str) {
+    return str.split(' ').map((element) => {
+        return `${element} ${element.length}`
+    })
+}
+*/
+
+//https://www.codewars.com/kata/5a3dd29055519e23ec000074/train/javascript
+//Check the exam
+/* 
+function checkExam(correctAnswers, studentAnswers) {
+    const totalScore =  correctAnswers.reduce((total,_,index,array) => {
+        return studentAnswers[index]
+            ? (total += array[index] === studentAnswers[index] ? 4 : -1)
+            : (total += 0);
+    },0)
+    return totalScore > 0 ? totalScore : 0
+}
+*/
+
+//https://www.codewars.com/kata/57f6ad55cca6e045d2000627/train/javascript
+//To square(root) or not to square(root)
+/*
+function squareOrSquareRoot(arr) {
+    return arr.map((element) => {
+        const squareRootOfElement = Math.sqrt(element);
+        return Number.isInteger(squareRootOfElement)
+            ? squareRootOfElement
+            : element ** 2;
+    });
+}
+*/
+
+//https://www.codewars.com/kata/55d277882e139d0b6000005d/train/javascript
+//Grasshopper - Array Mean
+/*
+const findAverage = (nums) => {
+    return nums.reduce((total,value) => {
+        return total + value
+    },0) / nums.length
+};
+*/
+
+//https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/javascript
+//Array plus array
+/*
+
+My Solution
+const arrayPlusArray = (arr1, arr2) => {
+    return sumOfArrayValues(arr1) + sumOfArrayValues(arr2)
+}
+const sumOfArrayValues = (array) => {
+    return array.reduce((total, value) => {
+        return total + value;
+    }, 0);
+};
+
+Alternative Solution
+function arrayPlusArray(arr1, arr2) {
+  return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+}
+*/
+
+//https://www.codewars.com/kata/5715eaedb436cf5606000381/train/javascript
+//Sum of positive
+/* 
+function positiveSum(arr) {
+    return arr.reduce((total, value) => {
+        return value > 0 ? total += value : total += 0
     },0)
 }
 */
