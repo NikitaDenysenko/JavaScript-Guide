@@ -119,7 +119,7 @@ const button = document.querySelector(".events .btn");
 const eventHeading = document.querySelector(".events h1");
 
 //TODO
-/* .removeEventListener() ??????? */
+/* .removeEventListener(), .innerHTML() ??????? */
 
 /* click event */
 //click - fires after full action occures

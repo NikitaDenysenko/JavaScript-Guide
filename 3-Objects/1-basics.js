@@ -21,6 +21,9 @@ const person = {
     "university degree": "masters", //to acces, use ['variable-name'],
     "health-status": "exelent",
 };
+
+//TODO review the notes 
+
 //console.log(person["university degree"]);
 //console.log(person[healthStatus]); //passing the string,to access variable in object
 //console.log(person[valueFromPersonObject]);

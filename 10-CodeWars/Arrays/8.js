@@ -136,3 +136,47 @@ function logicalCalc(array, op){
   return array.reduce(ops[op]);
 }
 */
+
+//https://www.codewars.com/kata/57eaeb9578748ff92a000009/train/javascript
+//Sum Mixed Array
+/*
+const array = [1,4,6]
+function sumMix(arr) {
+    return arr.map(Number).reduce((total,value) => {
+        return total += value
+    },0)
+}
+console.log(sumMix(array))
+*/
+
+//https://www.codewars.com/kata/57eae65a4321032ce000002d/train/javascript
+//Fake Binary
+/*
+My Solution
+const str = "45385593107843568";
+function fakeBin(str) {
+    let result = ''
+    str.split('').map(Number).forEach((num) => {
+        result += num < 5 ? "0" : "1";
+    })
+    return result
+}
+
+A better solution
+function fakeBin(x) {
+    return x.split('').map(n => n < 5 ? 0 : 1).join('');
+}
+ */
+
+//https://www.codewars.com/kata/56ff6a70e1a63ccdfa0001b1/train/javascript
+//SpeedCode #2 - Array Madness
+/*
+const arrayMadness = (first, second) => {
+    return countSumOfPow(first,2) > countSumOfPow(second,3);
+}
+const countSumOfPow = (array, pow) => {
+    return array.reduce((total,value) => {
+        return total + Math.pow(value, pow)
+    },0)
+}
+*/
