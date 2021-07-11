@@ -335,3 +335,53 @@ function differenceInAges(ages) {
     return [theYoungest, theEldest, differenceInAges];
 }
 */
+
+//https://www.codewars.com/kata/5899642f6e1b25935d000161/train/javascript
+//Merge two sorted arrays into one
+/* 
+function mergeArrays(arr1, arr2) {
+    return Array.from(new Set(arr1.concat(arr2))).sort((a, b) => a - b);
+}
+*/
+
+//https://www.codewars.com/kata/57613fb1033d766171000d60/train/javascript
+//UEFA EURO 2016
+/* 
+const uefaEuro2016 = (teams, scores) => {
+    const teamOne = getTeamData(teams[0],scores[0])
+    const teamTwo = getTeamData(teams[1], scores[1]);
+    switch (true) {
+        case teamOne.score > teamTwo.score:
+            return `At match ${teamOne.name} - ${teamTwo.name}, ${teamOne.name} won!`
+        case teamOne.score < teamTwo.score:
+            return `At match ${teamOne.name} - ${teamTwo.name}, ${teamTwo.name} won!`
+        case teamOne.score === teamTwo.score:
+            return `At match ${teamOne.name} - ${teamTwo.name}, teams played draw.`;
+        default:
+            break;
+    }
+}
+const getTeamData = (name, score) => {
+    return {
+        name, score
+    }
+}
+*/
+
+//https://www.codewars.com/kata/57eae20f5500ad98e50002c5/train/javascript
+//Remove String Spaces
+/* 
+const noSpace = (str) => str.split(" ").join("");
+*/
+
+//https://www.codewars.com/kata/57cc40b2f8392dbf2a0003ce/train/javascript
+//No Loops 2 - You only need one
+/*
+const check = (arr, elem) => arr.includes(elem);
+*/
+
+//https://www.codewars.com/kata/53dc54212259ed3d4f00071c/train/javascript
+//Sum Arrays
+/* 
+const sum = (numbers) => numbers.reduce((total, value) => total + value,0);
+*/
