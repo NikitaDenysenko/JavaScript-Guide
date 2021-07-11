@@ -276,3 +276,62 @@ function positiveSum(arr) {
     },0)
 }
 */
+
+//https://www.codewars.com/kata/55edaba99da3a9c84000003b/train/javascript
+//Find numbers which are divisible by given number
+/* 
+function divisibleBy(arr, divisor) {
+    return arr.filter((value,index) => {
+        return value % divisor === 0
+    })
+}
+*/
+
+//https://www.codewars.com/kata/57cfdf34902f6ba3d300001e/train/javascript
+//Sort and Star
+/* 
+My Solution
+function twoSort(arr) {
+    return arr
+        .sort()[0]
+        .split("")
+        .reduce((total, value, index) => total + (value + "***"), "")
+        .slice(0, -3);
+}
+
+A Better Solution
+function twoSort(s) {
+  return s.sort()[0].split('').join('***');
+}
+*/
+
+//https://www.codewars.com/kata/57f222ce69e09c3630000212/train/javascript
+//Well of Ideas - Easy Version
+/* 
+function well(arr) {
+    const countGoodIdeas = arr.reduce(
+        (total, value) => (value === "good" ? (total += 1) : (total += 0)),
+        0
+    );
+    switch (true) {
+        case countGoodIdeas === 0:
+            return "Fail!";
+        case countGoodIdeas <= 2:
+            return "Publish!";
+        case countGoodIdeas > 2:
+            return "I smell a series!";
+        default:
+            break;
+    }
+}*/
+
+//https://www.codewars.com/kata/5720a1cb65a504fdff0003e2/train/javascript
+//Find the Difference in Age between Oldest and Youngest Family Members
+/*
+function differenceInAges(ages) {
+    const theEldest = Math.max(...ages);
+    const theYoungest = Math.min(...ages);
+    const differenceInAges = theEldest - theYoungest;
+    return [theYoungest, theEldest, differenceInAges];
+}
+*/
