@@ -9,3 +9,5 @@ if (str) {
 } else {
     console.log("value is falsy");
 }
+
+//TODO ||, &&
