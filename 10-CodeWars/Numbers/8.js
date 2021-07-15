@@ -126,3 +126,17 @@ const basicOp = (operation, value1, value2) => {
     }
 }
 */
+
+//https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/javascript
+//Grasshopper - Check for factor
+/*
+const checkForFactor = (base, factor) => base % factor === 0
+*/
+
+//https://www.codewars.com/kata/5890d8bc9f0f422cf200006b/train/javascript
+//Calculate Price Excluding VAT
+/*
+function excludingVatPrice(price) {
+    return price === null ? -1 : Number((price / 1.15).toFixed(2))
+}
+*/
