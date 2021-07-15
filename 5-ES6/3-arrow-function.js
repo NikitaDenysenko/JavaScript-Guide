@@ -1,6 +1,8 @@
 // key deference - 'this' keyword!
-// regular function - 'this' referse to the parent (left of the dot)
-// arrow funciton - 'this' referse to it's current surrounding scope
+
+// !! regular function - 'this' referse to the parent (left of the dot) !!
+// !! arrow funciton - 'this' referse to it's current surrounding scope !!
+
 //TODO more notes about 'this' in arrow function
 
 const parent = {

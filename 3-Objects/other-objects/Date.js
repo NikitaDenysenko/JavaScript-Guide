@@ -1,4 +1,4 @@
-//TODO Make a table out of it
+//TODO Make a table out of it (toDateString)
 
 const months = [
     "January",
