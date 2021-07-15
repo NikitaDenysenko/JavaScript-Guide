@@ -1,3 +1,5 @@
+//TODO add console.log()'s
+
 /* .abs() */
 //returns absolute (not negative) number
 console.log(Math.abs(-4));

@@ -54,3 +54,75 @@ const binToDec = (bin) => parseInt(bin, 2);
 /* 
 const bonusTime = (salary, bonus) => (bonus ? `£${salary * 10}` : `£${salary}`);
 */
+
+//https://www.codewars.com/kata/59fca81a5712f9fa4700159a/train/javascript
+//Convert to Binary
+/*
+function toBinary(n){
+  return Number(n.toString(2));
+}
+*/
+
+//https://www.codewars.com/kata/56c24c58e0c0f741d4001aef/train/javascript
+//isReallyNaN
+/*
+const isReallyNaN = (value) => {
+    return Number.isNaN(value);
+};
+*/
+
+//https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
+//Return Negative
+/*
+My Solution
+const makeNegative = (num) =>  num < 0 ? num : num * -1
+
+A Better Solution
+function makeNegative(num) {
+  return -Math.abs(num);
+}
+*/
+
+//https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/train/javascript
+//Invert values
+/*
+const invert = (array) => {
+    return array.map(value => {
+        return value * -1;
+    })
+}
+*/
+
+//https://www.codewars.com/kata/5875b200d520904a04000003/train/javascript
+//Will there be enough space?
+/*
+My Solution
+const enough = (cap, on, wait) => {
+    const abordedPassagers = on + wait - cap;
+    return abordedPassagers <= 0 ? 0 : abordedPassagers;
+} 
+
+A Better Solution
+function enough(cap, on, wait) {
+  return Math.max(wait + on - cap, 0);
+}
+*/
+
+//https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/javascript
+//Basic Mathematical Operations
+/*
+const basicOp = (operation, value1, value2) => {
+    switch (operation) {
+        case '+':
+            return value1 + value2
+        case '-':
+            return value1 - value2
+        case '*':
+            return value1 * value2
+        case '/':
+            return value1 / value2
+        default:
+            break;
+    }
+}
+*/
