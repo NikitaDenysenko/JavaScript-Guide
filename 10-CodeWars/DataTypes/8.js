@@ -20,3 +20,31 @@ const joinStrings = (string1, string2) => `${string1} ${string2}`
 /*
 const contamination = (text, char) => new Array(text.length).fill(char).join('')
 */
+
+//https://www.codewars.com/kata/5aa736a455f906981800360d/train/javascript
+//The Feast of Many Beasts
+/*
+const feast = (beast, dish) => {
+    const beastLetters = getLetters(beast)
+    const dishLetters = getLetters(dish)
+
+    return (
+        beastLetters.first === dishLetters.first &&
+        beastLetters.last === dishLetters.last
+    ); 
+}
+const getLetters = (word) => {
+    return {
+        first: word[0],
+        last: word[word.length - 1],
+    };
+}
+*/
+
+//https://www.codewars.com/kata/559ac78160f0be07c200005a/train/javascript
+//Name Shuffler
+/*
+function nameShuffler(str) {
+   return str.split(' ').reverse().join(' ')
+}
+*/
