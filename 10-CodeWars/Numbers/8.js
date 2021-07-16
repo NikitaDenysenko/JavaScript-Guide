@@ -140,3 +140,40 @@ function excludingVatPrice(price) {
     return price === null ? -1 : Number((price / 1.15).toFixed(2))
 }
 */
+
+//https://www.codewars.com/kata/5bb904724c47249b10000131/train/javascript
+//Total amount of points
+/*
+function points(games) {
+    let points = 0;
+    games.forEach((element) => {
+        const teamOneScore = element[0]
+        const teamTwoScore = element[2]
+        switch (true) {
+            case teamOneScore > teamTwoScore:
+                return points += 3
+            case teamOneScore < teamTwoScore:
+                return points += 0
+            case teamOneScore === teamTwoScore:
+                return points += 1
+            default:
+                break;
+        }
+    });
+    return points;
+}
+*/
+
+//https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript
+//Even or Odd
+/*
+const evenOrOdd = (number) => number % 2 === 0 ? 'Even' : 'Odd'
+*/
+
+//https://www.codewars.com/kata/57f6ecdfcca6e045d2001207/train/javascript
+//Simple Comparison?
+/*
+function add(a, b) {
+    return a == b
+}
+*/
