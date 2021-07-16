@@ -76,3 +76,75 @@ function greetDevelopers(list) {
     })
 }
 */
+
+//https://www.codewars.com/kata/5827acd5f524dd029d0005a4/train/javascript
+//Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?
+/*
+function isRubyComing(list) {
+    return list.some((element) => {
+        return element.language === "Ruby";
+    })
+}
+*/
+
+//https://www.codewars.com/kata/5827bc50f524dd029d0005f2/train/javascript
+//Coding Meetup #4 - Higher-Order Functions Series - Find the first Python developer
+/*
+function getFirstPython(list) {
+    const firstPythonDev = list.find((element) => {
+        return element.language === "Python";
+    });
+    return firstPythonDev
+        ? `${firstPythonDev.firstName}, ${firstPythonDev.country}`
+        : "There will be no Python developers";
+}
+*/
+
+//https://www.codewars.com/kata/582dace555a1f4d859000058/train/javascript
+//Coding Meetup #12 - Higher-Order Functions Series - Find GitHub admins
+/*
+function findAdmin(list, lang) {
+    return list.filter((element) => {
+        return element.language === lang && element.githubAdmin === "yes"
+    })
+}
+*/
+
+//https://www.codewars.com/kata/583ea278c68d96a5fd000abd/train/javascript
+//Coding Meetup #17 - Higher-Order Functions Series - Sort by programming language
+/*
+function sortByLanguage(list) {
+    return list.sort((a, b) => {
+        return a.language === b.language
+            ? a.firstName > b.firstName
+                ? 1
+                : -1
+            : a.language > b.language
+            ? 1
+            : -1;
+    });
+}
+*/
+
+//https://www.codewars.com/kata/56bd9e4b0d0b64eaf5000819/train/javascript
+//Combine objects
+/*
+function combine(objA, objB, objC) {
+    const allKeys = Array.from(
+        new Set(
+            [...arguments].reduce((totalKeys, element) => {
+                totalKeys = [...totalKeys, ...Object.keys(element)];
+                return totalKeys;
+            }, [])
+        )
+    );
+    return allKeys.reduce((count, element) => {
+        let sum = 0;
+        for (let i = 0; i < arguments.length; i++) {
+            sum += arguments[i][element] || 0;
+        }
+        count[element] = sum;
+        return count;
+    }, {});
+}
+*/
