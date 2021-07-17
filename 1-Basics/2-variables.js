@@ -8,3 +8,5 @@
  * case sensative (fullMoon vs fullmoon)
  * camelCase or snake_case
  */
+
+//TODO 'use strict'

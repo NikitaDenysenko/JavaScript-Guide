@@ -129,6 +129,7 @@ function sortByLanguage(list) {
 //https://www.codewars.com/kata/56bd9e4b0d0b64eaf5000819/train/javascript
 //Combine objects
 /*
+My Solution
 function combine(objA, objB, objC) {
     const allKeys = Array.from(
         new Set(
@@ -146,5 +147,27 @@ function combine(objA, objB, objC) {
         count[element] = sum;
         return count;
     }, {});
+}
+
+A better solution
+const combine = (...params) =>
+    params.reduce((total, element) => {
+        for (const property in element) {
+            total[property] =
+                property in total
+                    ? total[property] + element[property]
+                    : element[property];
+        }
+        return total;
+    }, {});
+*/
+
+//https://www.codewars.com/kata/581b30af1ef8ee6aea0015b9/train/javascript
+//Find how many times did a team from a given country win the Champions League?
+/*
+const countWins = (winnerList, country) => {
+    return winnerList.reduce((totalWins, team) => {
+        return team.country === country ? totalWins += 1 : totalWins
+    }, 0)   
 }
 */
