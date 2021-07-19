@@ -23,6 +23,7 @@ const person = {
 };
 
 //TODO review the notes 
+//TODO OOP
 
 //console.log(person["university degree"]);
 //console.log(person[healthStatus]); //passing the string,to access variable in object
