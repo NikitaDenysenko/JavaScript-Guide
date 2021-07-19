@@ -171,3 +171,31 @@ const countWins = (winnerList, country) => {
     }, 0)   
 }
 */
+
+//https://www.codewars.com/kata/5b6c220fa0a661fbf200005d/train/javascript
+//Convert the score
+/*
+const scores = {
+    nil: 0,
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    five: 5,
+    six: 6,
+    seven: 7,
+    eight: 8,
+    nine: 9,
+};
+
+const scoreboard = (str) => {
+    const finalScore = str.split(' ').reduce((score, element) => {
+        if(scores[element] || scores[element] === 0) {
+            console.log(scores[element]);
+            score.push(scores[element]);
+        }
+        return score
+    },[])
+    return finalScore
+}
+*/

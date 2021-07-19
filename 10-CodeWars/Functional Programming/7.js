@@ -78,9 +78,19 @@ Array.range = function (start, count) {
     return result
 };
 
-Array.prototype.sum = function (...params) {
+Array.prototype.sum = function () {
     return this.reduce((sum, element) => {
         return sum + element
     },0)
 };
+*/
+
+//https://www.codewars.com/kata/57ced2c1c6fdc22123000316/train/javascript
+//Numbers to Objects
+/*
+const numObj = (arr) => {
+    return arr.map((element) => {
+        return { [element]: String.fromCharCode(element) };
+    })
+}
 */

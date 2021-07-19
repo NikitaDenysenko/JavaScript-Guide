@@ -72,10 +72,11 @@ btn2.addEventListener("click", function () {
     showThis();
 });
 
+//TODO Add notes about them
 /* Blue Print */
 /* Factory Functions */
 /* Constructor Functions */
-//function object???
+//TODO function object???
 
 //factory function
 function createCar(brandName, maxSpeed) {
