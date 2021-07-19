@@ -1,4 +1,4 @@
-/* localStorage, sessionStorage */
+/*TODO Cookies localStorage, sessionStorage */
 sessionStorage.setItem("name", "Joe");
 
 localStorage.setItem("name", "Joe");

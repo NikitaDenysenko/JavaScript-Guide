@@ -64,4 +64,23 @@ const reverse = (array) => {
     }
     return result
 };
- */
+*/
+
+//https://www.codewars.com/kata/52195c9bb576caf14200007f/train/javascript
+//Adding useful functional functionality to JavaScript arrays
+/*
+Array.range = function (start, count) {
+    const result = []
+    for (let i = 0; i < count; i++) {
+        result.push(start);
+        start++;
+    }
+    return result
+};
+
+Array.prototype.sum = function (...params) {
+    return this.reduce((sum, element) => {
+        return sum + element
+    },0)
+};
+*/
