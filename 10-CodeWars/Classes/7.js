@@ -127,3 +127,44 @@ class Cube extends Cuboid {
     }
 }
 */
+
+//https://www.codewars.com/kata/597c684822bc9388f600010f/train/javascript
+//FIX ME :Get Full Name
+/*
+My Solution
+class Dinglemouse {
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getFullName() {
+        if(this.firstName && this.lastName) {
+            return `${this.firstName} ${this.lastName}`;
+        }
+        if(!this.firstName && !this.lastName) {
+            return ``;
+        }
+        if(this.firstName && !this.lastName) {
+            return `${this.firstName}`;
+        }
+        if(!this.firstName && this.lastName) {
+            return `${this.lastName}`;
+        }
+    }
+}
+
+A Better Solution
+class Dinglemouse{
+
+  constructor( firstName, lastName ){
+    this._firstName=firstName;
+    this._lastName=lastName;
+  }
+  
+  getFullName(){
+    return `${this._firstName} ${this._lastName}`.trim();
+  }
+  
+}
+*/

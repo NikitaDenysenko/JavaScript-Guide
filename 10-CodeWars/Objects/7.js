@@ -199,3 +199,81 @@ const scoreboard = (str) => {
     return finalScore
 }
 */
+
+//https://www.codewars.com/kata/5c06a930717256064b0001ab/train/javascript
+//Rap-Name Generator
+/*
+const numbersToNames = {
+    0: '0ero',  
+    1: '1ne',
+    2: '2wo',
+    3: '3hree',
+    4: '4our',
+    5: '5ive',
+    6: '6ix',
+    7: '7even',
+    8: '8ight',
+    9: '9ine',
+}
+const rapNameGen = (dob) => {
+    const date = dob.split('.')
+    const charForFirstName = getAverageOfDigits(date[0])
+    const charForFirstSecond = getAverageOfDigits(date[2])
+    return `${numbersToNames[charForFirstName]} ${numbersToNames[charForFirstSecond]}`;
+}
+
+const getAverageOfDigits = (num) => {
+    return Math.round(
+        num
+            .split("")
+            .map(Number)
+            .reduce((total, element) => total + element) / 2
+    );
+}
+*/
+
+//https://www.codewars.com/kata/583f158ea20cfcbeb400000a/train/javascript
+//Make a function that does arithmetic!
+/*
+const operations = {
+    add(a, b) {
+        return a + b;
+    },
+    subtract(a, b) {
+        return a - b;
+    },
+    multiply(a, b) {
+        return a * b;
+    },
+    divide(a, b) {
+        return a / b;
+    },
+};
+
+const arithmetic = (a, b, operator) => {
+    return operations[operator](a,b)
+}
+*/
+
+//https://www.codewars.com/kata/581534b8d5fae4428e00001e/train/javascript
+//Extending JavaScript Objects: Simple Math Methods
+/*
+Number.prototype.add = function(num) {
+    return this + num
+}
+Number.prototype.sub = function(num) {
+    return this - num
+}
+Number.prototype.mul = function(num) {
+    return this * num
+}
+Number.prototype.div = function(num) {
+    return this / num
+}
+Number.prototype.pow = function(num) {
+    return Math.pow(this,num)
+}
+Number.prototype.sqr = function(num) {
+    return Math.sqrt(this)
+}
+*/
