@@ -87,10 +87,6 @@ const demoSplice = (startingIndex, deleteCount, optionalNewElements) => {
 //.join() .indexOf() .lastIndexOf() .toString()
 
 /* .slice() */
-//
-
-
-
 
 /* .sort() */
 //sorts an array, returns sorted (mutated) array, it uses tree-way comparison algorithm
@@ -100,6 +96,9 @@ const demoSplice = (startingIndex, deleteCount, optionalNewElements) => {
     if return value < 0
 */
 
+/* .copyWithin() */
+//copies the sequence of array's elements
+[1, 2, 3, 4, 5].copyWithin(0, 3); // [ 4, 5, 3, 4, 5 ]
 
 
 // ITERABLE METHODS //

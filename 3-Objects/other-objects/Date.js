@@ -1,4 +1,4 @@
-//TODO Make a table out of it (toDateString)
+//TODO Make a table out of it 
 
 const months = [
     "January",
@@ -32,7 +32,8 @@ console.log({ date1, date2, date3 });
 
 const date = new Date();
 
-console.log("Getting the Date");
+/* .toDateString() */
+//returns human-readable string
 
 /* .getDate */
 //returns day of the month (1-31) of the date
@@ -77,57 +78,57 @@ const newDate = new Date(1962, 6, 7);
 /* .setDate */
 //sets day of the month (1-31) of the date
 
-//console.log(newDate)
-//newDate.setDate(3);
-//console.log(newDate);
+console.log(newDate)
+newDate.setDate(3);
+console.log(newDate);
 
 /* .setFullYear() */
 //sets 4-digit year of the date
 
-// console.log(newDate);
-// newDate.setFullYear(1984);
-// console.log(newDate);
+console.log(newDate);
+newDate.setFullYear(1984);
+console.log(newDate);
 
 /* .setHours() */
 //sets hourse (0-23) of the date
 
-// console.log(newDate);
-// newDate.setHours(13);
-// console.log(newDate);
+console.log(newDate);
+newDate.setHours(13);
+console.log(newDate);
 
 /* .setMilliseconds() */
 //sets miliseconds (0-999) of the date
 
-// console.log(newDate);
-// newDate.setMilliseconds(777);
-// console.log(newDate);
+console.log(newDate);
+newDate.setMilliseconds(777);
+console.log(newDate);
 
 /* .setMinutes() */
 //sets minutes (0-59) of the date
 
-// console.log(newDate);
-// newDate.setMinutes(45);
-// console.log(newDate);
+console.log(newDate);
+newDate.setMinutes(45);
+console.log(newDate);
 
 /* .setMonth() */
 //sets month (0-11) of the date
 
-// console.log(newDate);
-// newDate.setMonth(10);
-// console.log(newDate);
+console.log(newDate);
+newDate.setMonth(10);
+console.log(newDate);
 
 /* .setSeconds() */
 //sets second (0-59) of the date
 
-// console.log(newDate);
-// newDate.setSeconds(45);
-// console.log(newDate);
+console.log(newDate);
+newDate.setSeconds(45);
+console.log(newDate);
 
 /* .setTime() */
 //sets time in milliseconds
 
-// console.log(newDate);
-// newDate.setSeconds(1337228);
-// console.log(newDate);
+console.log(newDate);
+newDate.setSeconds(1337228);
+console.log(newDate);
 
 

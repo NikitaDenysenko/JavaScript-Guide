@@ -17,5 +17,5 @@ const findOddDigits = (number, amount) => {
             }, "")
     ;
     return (!oddDigits || amount > oddDigits.length) ? 0 : parseInt(oddDigits);
-};
+}; 
 */

@@ -1,90 +1,85 @@
-//TODO add console.log()'s
-
 /* .abs() */
 //returns absolute (not negative) number
-console.log(Math.abs(-4));
-console.log(Math.abs(9));
-console.log(Math.abs("-3"));
-console.log(Math.abs("3"));
-console.log(Math.abs(null));
-console.log(Math.abs(undefined));
+Math.abs(-4); //4
+Math.abs(9); //9
+Math.abs("-3"); //3
+Math.abs("3"); //3
+Math.abs(null); //0
+Math.abs(undefined); //NaN
 
 /* .round() */
 //rounds number to the nearest int
-console.log(Math.round(8.1));
-console.log(Math.round(8.9));
-console.log(Math.round(-8.9));
-console.log(Math.round(-8.1));
+Math.round(8.1);//8
+Math.round(8.9);//9
+Math.round(-8.9);//-9
+Math.round(-8.1);//-8
 
 /* .ceil() */
 //rounds a number up to the next largest integer
-console.log(Math.ceil("8.3324"));
-console.log(Math.ceil("-7.002356"));
-console.log(Math.ceil(10.00034827));
-console.log(Math.ceil(-10.273842));
-console.log(Math.ceil(null));
-console.log(Math.ceil(undefined));
+Math.ceil("8.3324");//9
+Math.ceil("-7.002356");//-7
+Math.ceil(10.00034827);//11
+Math.ceil(-10.273842);//-10
+Math.ceil(null);//0
+Math.ceil(undefined);// NaN
 
 /* .floor() */
 //rounds a number up to the next least integer
-console.log(Math.floor(10.3482732));
-console.log(Math.floor(-10.273842));
-console.log(Math.floor("8.3324"));
-console.log(Math.floor("-7.002356"));
-console.log(Math.floor(null));
-console.log(Math.floor(undefined));
+Math.floor(10.3482732); //10
+Math.floor(-10.273842); //-11
+Math.floor("8.3324"); //8
+Math.floor("-7.002356"); //-8
+Math.floor(null); //0
+Math.floor(undefined); //NaN
 
 /* .max() */
 //returns maximum value
-console.log(Math.max(2, 5, 7, 3, 5, 99, 35));
-console.log(Math.max("3", "4", "2", "100"));
-console.log(Math.max(null));
-console.log(Math.max(undefined));
+Math.max(2, 5, 7, 3, 5, 99, 35); //99
+Math.max("3", "4", "2", "100"); //100
+Math.max(null); //0
+Math.max(undefined); //NaN
 
 /* .min() */
 //returns minimum value
-console.log(Math.min(2, 5, 7, 3, 5, 99, 35));
-console.log(Math.min("3", "4", "-21", "100"));
-console.log(Math.min(null));
-console.log(Math.min(undefined));
+Math.min(2, 5, 7, 3, 5, 99, 35); //2 
+Math.min("3", "4", "-21", "100"); //-21
+Math.min(null); //0
+Math.min(undefined); //NaN
 
 /* .pow() */
 //returns value in exponent power
-console.log(Math.pow(2, 3));
-console.log(Math.pow("2", "5"));
-console.log(Math.pow(10, 3));
+Math.pow(2, 3); //8
+Math.pow("2", "5"); //32
+Math.pow(10, 3); //1000
 
 /* .sqrt() */
 //returns the square root of a number
-console.log(Math.sqrt(9));
-console.log(Math.sqrt("36"));
+Math.sqrt(9); //3
+Math.sqrt("36"); //6
 
 /* .sign() */
 //returns -1,1,0 (-1 for '-', 1 for '+', 0 for 0) depending on numbr's sign
-console.log(Math.sign(-9));
-console.log(Math.sign(83));
-console.log(Math.sign(0));
+Math.sign(-9); //-1
+Math.sign(83); //1
+Math.sign(0); //0
 
 /* .random() */
 //returns pseudo random value (from 0 to 1)
-console.log(Math.random());
+Math.random(); //(one of examples) 0.9252364335439884
 
 //random int funtion
 const randomInt = (limit) => {
-    return Math.floor(Math.random() * limit) + 1;
+    return Math.floor(Math.random() * limit) + 1; //(one of examples) 90
 };
-console.log(randomInt(100));
 
 //random float function
 
 //variant 1
 const randomFloat1 = (limit) => {
-    return Math.floor(Math.random() * limit) / limit;
+    return Math.floor(Math.random() * limit) / limit; // (one of examples) 0.89
 };
-console.log(randomFloat1(100));
 
 //variant 2
 const randomFloat2 = () => {
-    return Math.random().toFixed(2);
+    return Math.random().toFixed(2); //(one of examples) 0.26
 };
-console.log(randomFloat2());
