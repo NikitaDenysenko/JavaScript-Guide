@@ -82,24 +82,27 @@ const demoSplice = (startingIndex, deleteCount, optionalNewElements) => {
     const output = `array = ${copyOfOriginal}, returned deleted elements = ${deletedItems}`;
     return printResult(output);
 };
+
 //TODO
-// .sort() .slice() .copyWithin() .fill() .includes() 
+// .sort() .slice() .copyWithin() .fill() .includes()
 //.join() .indexOf() .lastIndexOf() .toString()
 
 /* .slice() */
 
 /* .sort() */
 //sorts an array, returns sorted (mutated) array, it uses tree-way comparison algorithm
-//if compareFunction was not provided - the elements are sorted by converting them to strings and comparing the strings in the order of Unicode code points 
+//if compareFunction was not provided - the elements are sorted by converting them to strings and comparing the strings in the order of Unicode code points
 //if compareFunction was provided - it will do the following
 /*
     if return value < 0
 */
 
 /* .copyWithin() */
-//copies the sequence of array's elements
-[1, 2, 3, 4, 5].copyWithin(0, 3); // [ 4, 5, 3, 4, 5 ]
-
+//copies the sequence of array's elements from an existing array into the same array
+// in a different position
+const arr = ["q", "w", "e", "r", "t", "y"]
+const startIndex = 0
+arr.copyWithin()
 
 // ITERABLE METHODS //
 console.log("------------------");
