@@ -85,7 +85,7 @@ const demoSplice = (startingIndex, deleteCount, optionalNewElements) => {
 
 //TODO
 // .sort() .slice() .copyWithin() .fill() .includes()
-//.join() .indexOf() .lastIndexOf() .toString()
+//.join() .indexOf() .lastIndexOf() .toString() .flat() .flatMap()
 
 /* .slice() */
 

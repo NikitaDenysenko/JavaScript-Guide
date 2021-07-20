@@ -76,3 +76,28 @@ const summation = n => n * (n + 1) / 2;
 /*
 const toCsvText = arr => arr.join('\n');
 */
+
+//https://www.codewars.com/kata/5a2e9ae2b6cfd7692a0000ba/train/javascript
+//Type of sum
+/*
+function typeOfSum(a, b) {
+  const sum = a + b
+  return typeof sum
+}
+*/
+
+//https://www.codewars.com/kata/5a651865fd56cb55760000e0
+//Array Leaders (Array Series #3)
+/*
+const arrayLeaders = (numbers) => {
+    return numbers.filter((element,index,arr) => {
+        return element > arr.slice(index + 1).sum();
+    })
+};
+
+Array.prototype.sum = function () {
+    return this.reduce((sum, element) => {
+        return sum + element;
+    }, 0);
+};
+*/
