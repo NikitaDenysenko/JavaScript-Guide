@@ -115,6 +115,8 @@ const demoSubstring = (str, from, to) => {
           endIndex < 0 => endIndex = stringLength + endIndex
 */
 
+//TODO .localeCompare()
+
 console.table({
     ".length": demoLength(testString),
     ".toLowerCase()": demoToLowerCase(testString),
