@@ -23,7 +23,6 @@ const person = {
 };
 
 //TODO review the notes 
-//TODO OOP
 
 //console.log(person["university degree"]);
 //console.log(person[healthStatus]); //passing the string,to access variable in object
@@ -166,8 +165,6 @@ const doe = new AccountClass();
 console.log(joe.deposit(500));
 console.log(joe);
 
-/* .call() */
-
 const mike = {
     name: "Mike",
     age: 32,
@@ -187,6 +184,8 @@ function greet(item) {
         `Hello,my name is ${this.name}, I'm ${this.age} and I have a ${item}`
     );
 }
+
+/* .call() */
 
 greet.call(mike, "apple");
 mike.introduceMyself.call(valera, "pineapple");
