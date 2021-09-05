@@ -277,3 +277,14 @@ Number.prototype.sqr = function(num) {
     return Math.sqrt(this)
 }
 */
+
+//https://www.codewars.com/kata/57ecf6efc7fe13eb070000e1/train/javascript
+//The Office I - Outed
+/*
+const outed = (meet, boss) => {
+    const teamPoints = Object.values(meet)
+    const totalPoints = teamPoints.reduce((total, value) => value + total) + meet[boss]
+    const totalTeamMembers = Object.keys(meet).length
+    return parseInt(totalPoints / totalTeamMembers) <= 5 ? 'Get Out Now!' : 'Nice Work Champ!'
+}
+*/
