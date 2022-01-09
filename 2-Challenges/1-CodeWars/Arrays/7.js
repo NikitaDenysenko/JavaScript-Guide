@@ -38,3 +38,25 @@ Array.prototype.last = function() {
     return this[this.length - 1]
 }
 */
+
+//https://www.codewars.com/kata/5abd66a5ccfd1130b30000a9/train/javascript
+//Row Weights
+/*
+function rowWeights(arr){
+    let teamOneWeight = 0
+    let teamTwoWeight = 0
+    arr.forEach((element, index) => {
+        let teamIndex = index + 1
+        teamIndex % 2 === 0 ?  teamTwoWeight += element : teamOneWeight += element
+    })
+    return [teamOneWeight, teamTwoWeight]
+}
+*/
+
+//https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript
+//Array.diff
+/*
+const arrayDiff = (first, second) => {
+    return first.filter((num) => !second.includes(num))
+}
+*/

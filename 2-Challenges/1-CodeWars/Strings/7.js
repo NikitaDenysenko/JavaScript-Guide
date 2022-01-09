@@ -7,3 +7,21 @@ const getMiddle = (str) => {
     return isEvenLength ? `${str[middle - 1]}${str[middle]}` : `${str[middle]}`;
 }
 */
+
+//https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript
+//Disemvowel Trolls
+/*
+const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+
+const disemvowel = (str) => {
+    return str
+        .split("")
+        .filter((char) => {
+            if (vowels.includes(char)) {
+                return ""
+            }
+            return char
+        })
+        .join("")
+}
+*/

@@ -22,7 +22,7 @@ class MembershipFactory {
         simple: SimpleMembership,
         standart: StandartMembership,
         premium: PremiumMembership
-    }
+    } 
 
     create(name, type = 'simple') {
         const Membership = MembershipFactory.list[type]
