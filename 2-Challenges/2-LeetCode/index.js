@@ -66,3 +66,40 @@ const twoSum = (numbers, target) => {
     }
 }
 */
+
+//https://leetcode.com/problems/reverse-integer/
+//7. Reverse Integer
+/*
+const downLimit = Math.pow(-2, 31)
+const upLimit = Math.pow(2, 31) - 1
+
+const getResultString = (number) => {
+    let result = ""
+    const reversedArray = getReverseArrayFromNumber(number)
+    for (let i = 0; i < reversedArray.length; i++) {
+        result = result + reversedArray[i]
+        if (+result < downLimit || +result > upLimit) {
+            return 0
+        }
+    }
+    return result
+}
+
+const getReverseArrayFromNumber = (number) => {
+    return Array.from(number.toString()).reverse()
+}
+
+const reverse = (number) => {
+    return number < 0
+        ? +`-${getResultString(Math.abs(number))}`
+        : +getResultString(number)
+}
+*/
+
+//https://leetcode.com/problems/powx-n/
+//50. Pow(x, n)
+/*
+const myPow = (x, n) => {
+    return Math.pow(x,n)
+};
+*/

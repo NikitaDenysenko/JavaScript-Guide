@@ -22,3 +22,52 @@ const calculateYears = (principal, interest, tax, desired) => {
     return year
 }
 */
+
+//Printer Errors
+//https://www.codewars.com/kata/56541980fa08ab47a0000040/train/javascript
+/*
+const errors = ["n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+const getErrorCounter = (str) =>
+    str
+        .split("")
+        .reduce(
+            (counter, value) => (errors.includes(value) ? ++counter : counter),
+            0
+        )
+const printerError = (str) => `${getErrorCounter(str)}/${str.length}`
+
+*/
+
+//https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript
+//Square Every Digit
+/*
+const squareDigits = (num) => {
+    return Number(
+        num
+            .toString()
+            .split("")
+            .reduce((result, num) => {
+                return result + Math.pow(Number(num), 2).toString()
+            }, "")
+    )
+}
+*/
+
+//https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript
+//You're a square!
+/*
+const isSquare = (num) => Number.isInteger(Math.sqrt(num))
+*/
+
+//https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/javascript
+//Growth of a Population
+/*
+const nbYear = (p0, percent, aug, p) => {
+    let countYear = 0
+    while(p0 < p) {
+        p0 += (p0 * percent / 100) + aug
+        countYear++
+    }
+    return countYear
+}
+*/

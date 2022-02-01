@@ -385,3 +385,18 @@ const check = (arr, elem) => arr.includes(elem);
 /* 
 const sum = (numbers) => numbers.reduce((total, value) => total + value,0);
 */
+
+//https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/javascript
+//Count of positives / sum of negatives
+/*
+const countPositivesSumNegatives = (input) => {
+    if(input === null || input.length === 0) {
+        return []
+    }
+    return input.reduce((result, num) => {
+        num > 0 ? result[0] += 1 : result[1] += num
+        return result
+    }, [0,0])
+}
+
+*/

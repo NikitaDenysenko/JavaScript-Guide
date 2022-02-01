@@ -25,3 +25,38 @@ const disemvowel = (str) => {
         .join("")
 }
 */
+
+//https://www.codewars.com/kata/554e4a2f232cdd87d9000038/train/javascript
+//Complementary DNA
+/*
+const DNAStrand = (dna) => {
+    return dna.split("").reduce((result, char) => {
+        switch (char) {
+            case "A":
+                return (result += "T")
+            case "T":
+                return (result += "A")
+            case "G":
+                return (result += "C")
+            case "C":
+                return (result += "G")
+            default:
+                return ""
+        }
+    }, "")
+}
+
+A better solution
+function DNAStrand(dna) {
+  return dna.replace(/./g, function(c) {
+    return DNAStrand.pairs[c]
+  })
+}
+
+DNAStrand.pairs = {
+  A: 'T',
+  T: 'A',
+  C: 'G',
+  G: 'C',
+} 
+*/
