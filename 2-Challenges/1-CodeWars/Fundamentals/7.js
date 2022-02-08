@@ -71,3 +71,26 @@ const nbYear = (p0, percent, aug, p) => {
     return countYear
 }
 */
+
+//https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/javascript
+//Mumbling
+/*
+const transformString = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
+}
+
+const getMultipleChars = (char, counter) => {
+    let result = ""
+    for (let i = 0; i < counter; i++) {
+        result = `${result}${char}`
+    }
+    return transformString(result)
+}
+
+const accum = (str) => {
+    return str
+        .split("")
+        .map((char, index) => getMultipleChars(char, index + 1))
+        .join("-")
+}
+*/

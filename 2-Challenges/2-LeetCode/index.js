@@ -103,3 +103,11 @@ const myPow = (x, n) => {
     return Math.pow(x,n)
 };
 */
+
+//https://leetcode.com/problems/valid-perfect-square/
+//367. Valid Perfect Square
+/*
+const isPerfectSquare = (num)  => {
+    return Number.isInteger(Math.sqrt(num) )
+}
+*/
